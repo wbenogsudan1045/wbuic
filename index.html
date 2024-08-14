@@ -4,33 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="" href="among_us_player_red_icon_156942.png">
 </head>
-<style>
-    a{
-        color: black;
-        text-decoration: none;
-        margin-left: 20px;
-        right: 20px;
-    }
-    .sess{
-        margin-bottom: 50px;
-    }
-    .sess2{
-        border-radius: 50%;
-        border: 5px solid black;
-    }
-</style>
+
 <body>
-    <h1>MY PORTFOLIO</h1>
+    <nav>
+        <a href=""><img src="pics/New_Project-removebg-preview.png" class="logo" alt=""></a>
+        <ul>
+            <li><a href="#aboutme">ABOUT ME</a></li>
+            <li><a href="#favoraites">FAVORITES</a></li>
+            <li><a href="#school">SCHOOL PROJECTS</a></li>
+            <li><a href="#talent">TALENT</a></li>
+            <li><a href="#footer">SOCIALS</a></li>
+        </ul>
+    </nav>
     <hr>
    <center>
-    <img src="385781040_2353196465068881_4330265252118316988_n.jpg" class="sess2" alt="" style="width:300px ; height: 300px;" boarder>
-        <h2>About me</h2>
+    <img src="385781040_2353196465068881_4330265252118316988_n.jpg" class="sess2" alt="">
+    <div class="aboutme" id="aboutme">    
+    <h2>About me</h2>
         <p>I am Walben P. Benogsduan,
-            <br>in Bachelor of Science in Information Technology
-           
+            <br>in Bachelor of Science in Information Technology     
         </p>
+    </div>
+    <div class="fav" id="favorites">
         <h2>Favorites</h2>
         <ul style="display: inline-block;">
             <li>Sweet food</li>
@@ -39,19 +37,25 @@
             <li>Music</li>
             <li>manga</li>
         </ul>
+    </div>
+    <div class="schoolp" id="school">
         <h2>School Projects</h2>
         <p>Some codes and systems that is needed last yr</p>
-        <div class="sess">
+    </div>
+    <div class="talents" id="talent">
         <h2>Talents</h2>
         <ul style="display: inline-block;">
             <li>If I want I can sleep 24/7</li>
             <li>Can eat 5 ticnap notnac</li>
         </ul>
     </div>
+</center>
+    <footer id="footer">
     <hr>
         <a href="https://www.facebook.com/walben.benogsudan" target="_blank">Facebook</a>
         <a href="https://github.com/wbenogsudan1045" target="_blank">GitHub</a>
         <a href="https://codepen.io/wbenogsudan1045" target="_blank">CodePin</a>
-   </center>
+    </footer>
+  
 </body>
 </html>
