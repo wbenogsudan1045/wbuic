@@ -8,7 +8,7 @@
     width: 150px;
 }
 nav{
-    background-color:pink;
+    background-color:purple;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -33,6 +33,9 @@ nav ul li a:hover{
     margin-bottom: 50px;
 }
 .sess2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 5%;
     margin-bottom: 3%;
     border-radius: 50%;
@@ -42,30 +45,39 @@ nav ul li a:hover{
 }
 .aboutme{
     margin-bottom: 10px;
+    text-align: center;
 }
+.aboutme h1{
+    
+    margin-bottom: 30px;
+}
+
 .aboutme span{
-    color: pink;
+    color: purple;
 }
 .fav{
     margin-bottom: 10px;
+    text-align: center;
 }
 .fav span{
-    color: pink;
+    color: purple;
 }
 .schoolp{
     margin-bottom: 10px;
+    text-align: center;
 }
 .schoolp span{
-    color: pink;
+    color:purple;
 }
 .talents{
     margin-bottom: 10px;
+    text-align: center;
 }
 .talents span{
-    color: pink;
+    color: purple;
 }
 footer{
-    background-color: pink;
+    background-color: purple;
 }
 footer{
 display: flex;
