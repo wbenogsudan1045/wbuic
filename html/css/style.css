@@ -29,54 +29,30 @@ nav ul li a{
 nav ul li a:hover{
     color: white;
 }
-.sess{
-    margin-bottom: 50px;
+.detl{
+    margin-top: 15%;
+    margin-left: 8%;
 }
-.sess2{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    margin-bottom: 3%;
-    border-radius: 50%;
-    border: 5px solid black;
-    width:300px ; 
-    height: 300px;
+.detl h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
 }
-.aboutme{
-    margin-bottom: 10px;
-    text-align: center;
-}
-.aboutme h1{
-    
-    margin-bottom: 30px;
-}
-
-.aboutme span{
+.detl span{ 
     color: purple;
 }
-.fav{
-    margin-bottom: 10px;
-    text-align: center;
+.detl p{
+    color: gray;
+    line-height: 22px
 }
-.fav span{
-    color: purple;
-}
-.schoolp{
-    margin-bottom: 10px;
-    text-align: center;
-}
-.schoolp span{
-    color:purple;
-}
-.talents{
-    margin-bottom: 10px;
-    text-align: center;
-}
-.talents span{
-    color: purple;
+.image{
+    position: absolute;
+    left: 60%;
+    top: 15%;
 }
 footer{
+    margin-bottom: 0%;
+    margin-top: 20%;
     background-color: purple;
 }
 footer{
