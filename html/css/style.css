@@ -3,6 +3,17 @@
     padding: 0;
     font-family: sans-serif;
 }
+:root{
+  --primary-color:white;
+  --secondary-color:black;
+}
+body.dark-mode{
+  --primary-color:black;
+  --secondary-color:white;
+}
+body{
+  background-color: var(--primary-color);
+}
 .logo{
     height: 75px;
     width: 150px;
@@ -23,68 +34,209 @@ nav ul li a{
     margin-bottom: 20px;
     margin-top: 20px;
     text-decoration: none;
-    color: black;
+    color: var(--secondary-color);
     font-weight: bold;
 }
 nav ul li a:hover{
-    color: white;
+    color: var(--primary-color)
 }
+.checkbtn {
+    font-size: 22px;
+    color: var(--primary-color);
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+section {
+  background: url("bg.jpg") no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}  
 .detl{
     margin-top: 15%;
     margin-left: 8%;
 }
 .detl h1{
     font-size: 50px;
-    color: black;
+    color: var(--secondary-color);
     margin-bottom: 20px;
 }
 .detl span{ 
     color: purple;
 }
 .detl p{
-    color: gray;
+    color: var(--secondary-color);
     line-height: 22px
 }
 .image{
-    position: absolute;
-    left: 60%;
-    top: 15%;
+    float: right;
+    width: 400px;
+    position: static;
+    
 }
 .links{
     margin-top: 5%;
     margin-left: 8%;
+    margin-bottom: 100px;
     display: flex;
+}
     
+.links{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.links a{
-    background-color: black;
-    border: 2px solid black;
-    border-radius: 100px;
-    color: white;
-    font-weight: bold;
+.links ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+ .links ul li a{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     text-decoration: none;
-    margin-left: 30px; 
-    padding: 10px 20px;
-   
+    font-weight: bold;
 }
-footer{
-    margin-bottom: 0%;
-    margin-top: 12%;
-    background-color: purple;
+.links ul li a:hover{
+    color: red;
 }
-footer{
-display: flex;
-justify-content: center;
+footer {
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; 
+  position: static; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
-footer a{
-margin-top: 10px;
-margin-bottom: 10px;
-color: black;
-font-weight: bold;
-text-decoration: none;
-margin-left: 20px; 
-right: 20px;
+
+footer a {
+  padding: 3px;
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 10px; /* Adjust margin as needed */
 }
-footer a:hover{
-    color: white;
+
+footer a:hover {
+  color: var(--primary-color);
 }
+.cpicon{
+  width:35px ;
+}
+.fbicon{
+  height: 35px;
+}
+.giticon{
+  height: 35px;
+}
+@media (max-width: 1050px) {
+    .logo {
+      padding-left: 30px;
+      
+    }
+    nav ul li a {
+      font-size: 16px;
+    }
+  }
+@media (max-width: 843px) {
+  .checkbtn {
+    display: block;
+    margin-left: 20px;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #9c1d9c;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked~ul {
+    left: 0;
+  }
+ a.links{
+    font-size: 90px;
+  } 
+  .links ul li a{
+    margin-bottom: 10px;
+    margin-top: 10px;
+ }
+.cpicon{
+    width:30px ;
+ }
+.fbicon{
+    height: 30px;
+ }
+    .giticon{
+      height: 30px;
+    }
+    footer{
+      margin-top: auto;
+    }
+@media (max-width: 756px) {
+       .image{
+        display: block;
+        justify-content: center;
+        justify-items: center;
+       }
+       h1 {
+       font-size: 45px;
+       }
+       p{
+        font-size: 15px;
+        line-height: 1px;
+       }
+       .links ul li a{
+        font-size: 15px;
+      }
+       .logo{
+        margin-left: 20%;
+      }
+       .cpicon{
+        width:25px ;
+      }
+      .fbicon{
+        height: 25px;
+      }
+      .giticon{
+        height: 25px;
+      }
+      footer{
+        margin-top: auto;
+      }
+    }
+}
+section {
+  background: url("bg.jpg") no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}  

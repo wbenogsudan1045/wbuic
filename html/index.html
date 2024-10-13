@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="icon" type="" href="images/among_us_player_red_icon_156942.png">
+    <script type="" src="js/atty.js" defer></script>
 </head>
 
 <body>
     <nav>
-        <a href="#"><img src="images/mylogo-removebg-preview.png" class="logo" alt="Logo"></a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <a href="#"><img src="images/mylogo-removebg-preview.png" class="logo" alt="Logo" id="dark-mode-toggle"></a>
         <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="aboutme.html">ABOUT ME</a></li>
@@ -18,31 +24,28 @@
             <li><a href="schoolproject.html">SCHOOL PROJECTS</a></li>
             <li><a href="talent.html">TALENT</a></li>
         </ul>
+       
     </nav>
     <div class="detl">
+        <img src="images/among_us_player_red_icon_156942.png" alt="" class="image">
+        <div class="textbox">
         <h1>Hi I am Walben <span>Benogsudan</span></h1>
         <p>This is my official portfolio website that shows a introduction about me. 
-        <br>also includes my Favorites, talents, school projects, details and works experiences 
+        also includes my Favorites, talents, school projects, details and works experiences 
         </p>
-        <div class="image">
-            <img src="images/among_us_player_red_icon_156942.png" class="boi" alt="Among Us Icon">
-        </div>
+    </div>
     </div>
     <div class="links">
-        <div class="healthy">
-            <a href="HealthyRecipes/index.html">Healthy Recipe</a>
-        </div>
-        <div class="fasionblog">
-            <a href="fashionblog/index.html">Fashion Blog</a>
-        </div>
-        <div class="olivia-wood">
-            <a href="olivia-woodruff-portfolio/index.html">Olivia Woodruff Portfolio</a>
-        </div>
+      <ul>
+        <li><div class="healthy"><a href="HealthyRecipes/index.html">Healthy Recipe</a></div></li>
+        <li><div class="fasionblog"><a href="fashionblog/index.html">Fashion Blog</a></div></li>
+        <li><div class="olivia-wood"><a href="olivia-woodruff-portfolio/index.html">Olivia Woodruff Portfolio</a></div></li>
+    </ul> 
     </div>
 <footer id="footer">
-    <a href="https://www.facebook.com/walben.benogsudan" target="_blank">Facebook</a>
-    <a href="https://github.com/wbenogsudan1045" target="_blank">GitHub</a>
-    <a href="https://codepen.io/wbenogsudan1045" target="_blank">CodePin</a>       
+    <a href="https://www.facebook.com/walben.benogsudan" target="_blank" ><img src="images/facebook-4096-black.png" alt="" class="fbicon"></a>
+    <a href="https://github.com/wbenogsudan1045" target="_blank"><img src="images/pngimg.com - github_PNG80.png" alt=""  class="giticon"></a>
+    <a href="https://codepen.io/wbenogsudan1045" target="_blank" ><img src="images/image_processing20210616-28548-1g71btv.png" alt="" class="cpicon"></a>       
 </footer>
 </body>
 </html>
