@@ -54,11 +54,6 @@ nav ul li a:hover{
   #check {
     display: none;
   }
-section {
-  background: url("bg.jpg") no-repeat;
-  background-size: cover;
-  height: calc(100vh - 80px);
-}  
 .detl-home{
     margin-top: 10%;
     margin-right: 5%;
@@ -282,13 +277,11 @@ footer a:hover {
   height: 35px;
 }
 @media (max-width: 1050px) {
-    .logo {
-      padding-left: 30px;
-      
-    }
-    nav ul li a {
-      font-size: 16px;
-    }
+  .logo {
+    padding-left: 30px;
+  }
+  nav ul li a {
+    font-size: 16px;
   }
 @media (max-width: 843px) {
   .checkbtn {
@@ -341,6 +334,34 @@ footer a:hover {
     footer{
       margin-top: auto;
     }
+    .detl-home{
+      margin-bottom: 40%;
+    }
+    .detl-home .amgus,
+    .detl-aboutme #aboutmeimage,
+    .detl-favorites .favimage,
+    .detl-schoolprojects .scholprojimage,
+    .detl-talent .tlntimage {
+      margin-top: 5%;
+        grid-column: 1 / 6; 
+        grid-row: 1; 
+        width: 100%; 
+        width: 200px;
+    }
+    
+    .textbox-home,
+    .textbox-aboutme,
+    .textbox-favorites,
+    .textbox-schoolprojects,
+    .textbox-talent{
+        grid-column: 1 / 6;
+        grid-row: 4 / 6;
+    }
+    .detl-home .links {
+      margin-top: 10%;
+      grid-column: 1 / 6;
+      grid-row: 7 ;
+    }
 @media (max-width: 756px) {
        .image{
         display: block;
@@ -373,6 +394,7 @@ footer a:hover {
         margin-top: auto;
       }
     }
+}
 }
 section {
   background: url("bg.jpg") no-repeat;
