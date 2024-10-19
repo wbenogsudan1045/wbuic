@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+:root{
+  --primary-color:white;
+  --secondary-color:black;
+}
+body.dark-mode{
+  --primary-color:black;
+  --secondary-color:white;
+}
+body{
+  background-color: var(--primary-color);
+}
+nav{
+    background-color:purple;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    display: flex;
+    align-items: flex-end;
+    height: 75px;
+    width: 150px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: var(--primary-color)
+}
+.checkbtn {
+    font-size: 22px;
+    color: var(--primary-color);
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+section {
+  background: url("bg.jpg") no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}  
+.detl-home{
+    margin-top: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(5, 20%); 
+    grid-template-rows: repeat(5, 20%);
+}
+
+.detl-home h1{
+    font-size: 50px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.textbox-home{
+    grid-column: 1 / 4; 
+    grid-row: 2 / 4; 
+    width: 100%; 
+    height: auto; 
+}
+
+.detl-home span{ 
+    color: purple;
+}
+
+.detl-home p{
+    color: var(--secondary-color);
+    line-height: 22px;
+}
+
+.amgus{
+    grid-column-start: 4;
+    float: right;
+    width: 400px;
+}  
+.links{
+    grid-column: 1 / 4; 
+    grid-row: 4 / 6; 
+}
+.links ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+ .links ul li a{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.links ul li a:hover{
+    color: red;
+}
+.detl-aboutme{
+    margin-bottom: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.detl-aboutme h1{
+    font-size: 50px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+.detl-aboutme span{ 
+    color: purple;
+}
+.detl-aboutme p{
+    color: var(--secondary-color);
+    line-height: 22px
+}
+.textbox-aboutme{
+    grid-column: 1 / 4; 
+    grid-row: 2 / 4; 
+    width: 100%; 
+    height: auto; 
+}
+#aboutmeimage{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid black;
+    grid-column-start:5;
+    grid-row-start:2;
+  }
+.detl-favorites{
+    margin-bottom: 20%;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.detl-favorites h1{
+    font-size: 50px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+.detl-favorites span{ 
+    color: purple;
+}
+.detl-favorites p{
+    color: var(--secondary-color);
+    line-height: 22px
+}
+.textbox-favorites{
+    grid-column: 1 / 4; 
+    grid-row: 2 / 4; 
+    width: 100%; 
+    height: auto; 
+}
+.favimage{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid black;
+    grid-column-start:5;
+    grid-row-start:2;
+  }
+  .detl-schoolprojects{
+    margin-bottom: 20%;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.detl-schoolprojects h1{
+    font-size: 50px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+.detl-schoolprojects span{ 
+    color: purple;
+}
+.detl-schoolprojects p{
+    color: var(--secondary-color);
+    line-height: 22px
+}
+.textbox-schoolprojects{
+    grid-column: 1 / 4; 
+    grid-row: 2 / 4; 
+    width: 100%; 
+    height: auto; 
+}
+.scholprojimage{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid black;
+    grid-column-start:5;
+    grid-row-start:2;
+  }
+  .detl-talent{
+    margin-bottom: 20%;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.detl-talent h1{
+    font-size: 50px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+.detl-talent span{ 
+    color: purple;
+}
+.detl-talent p{
+    color: var(--secondary-color);
+    line-height: 22px
+}
+.textbox-talent{
+    grid-column: 1 / 4; 
+    grid-row: 2 / 4; 
+    width: 100%; 
+    height: auto; 
+}
+.tlntimage{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid black;
+    grid-column-start:5;
+    grid-row-start:2;
+  }
+footer {
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; 
+  position: static; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer a {
+  padding: 3px;
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+footer a:hover {
+  color: var(--primary-color);
+}
+.cpicon{
+  width:35px ;
+}
+.fbicon{
+  height: 35px;
+}
+.giticon{
+  height: 35px;
+}
+@media (max-width: 1050px) {
+    .logo {
+      padding-left: 30px;
+      
+    }
+    nav ul li a {
+      font-size: 16px;
+    }
+  }
+@media (max-width: 843px) {
+  .checkbtn {
+    display: block;
+    margin-left: 20px;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #9c1d9c;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked~ul {
+    left: 0;
+  }
+ a.links{
+    font-size: 90px;
+  } 
+  .links ul li a{
+    margin-bottom: 10px;
+    margin-top: 10px;
+ }
+.cpicon{
+    width:30px ;
+ }
+.fbicon{
+    height: 30px;
+ }
+    .giticon{
+      height: 30px;
+    }
+    footer{
+      margin-top: auto;
+    }
+@media (max-width: 756px) {
+       .image{
+        display: block;
+        justify-content: center;
+        justify-items: center;
+       }
+       h1 {
+       font-size: 45px;
+       }
+       p{
+        font-size: 15px;
+        line-height: 1px;
+       }
+       .links ul li a{
+        font-size: 15px;
+      }
+       .logo{
+        margin-left: 20%;
+      }
+       .cpicon{
+        width:25px ;
+      }
+      .fbicon{
+        height: 25px;
+      }
+      .giticon{
+        height: 25px;
+      }
+      footer{
+        margin-top: auto;
+      }
+    }
+}
+section {
+  background: url("bg.jpg") no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}  
