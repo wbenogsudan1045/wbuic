@@ -362,7 +362,7 @@ footer a:hover {
       grid-row: 7 ;
     }
 @media (max-width: 756px) {
-  
+
       .detl-home .amgus,
       .detl-aboutme #aboutmeimage,
       .detl-favorites .favimage,
@@ -403,6 +403,36 @@ footer a:hover {
       }
       footer{
         margin-top: auto;
+      }
+      @media (max-width: 456px) {
+      .detl-home .amgus,
+      .detl-aboutme #aboutmeimage,
+      .detl-favorites .favimage,
+      .detl-schoolprojects .scholprojimage,
+      .detl-talent .tlntimage {
+        margin-top: 20%;
+        margin-bottom: 20%;
+        grid-column: 1 / 6; 
+        grid-row: 1; 
+        width: 150px;
+        }
+        p{
+          font-size: 10;
+        }
+        h1{
+          font-size: 30;
+        }
+      .textbox-home,
+      .textbox-aboutme,
+      .textbox-favorites,
+      .textbox-schoolprojects,
+      .textbox-talent{
+        grid-column: 1 / 6;
+        grid-row: 4 / 6;
+        margin-bottom: 20%;
+        }
+        
+
       }
     }
 }
