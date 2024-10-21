@@ -362,6 +362,7 @@ footer a:hover {
       grid-row: 7 ;
     }
 @media (max-width: 756px) {
+  
       .detl-home .amgus,
       .detl-aboutme #aboutmeimage,
       .detl-favorites .favimage,
