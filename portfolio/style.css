@@ -345,7 +345,6 @@ footer a:hover {
       margin-top: 5%;
         grid-column: 1 / 6; 
         grid-row: 1; 
-        width: 100%; 
         width: 200px;
     }
     
@@ -363,6 +362,17 @@ footer a:hover {
       grid-row: 7 ;
     }
 @media (max-width: 756px) {
+      .detl-home .amgus,
+      .detl-aboutme #aboutmeimage,
+      .detl-favorites .favimage,
+      .detl-schoolprojects .scholprojimage,
+      .detl-talent .tlntimage {
+        margin-top: 15%;
+        margin-bottom: 15%;
+        grid-column: 1 / 6; 
+        grid-row: 1; 
+        width: 150px;
+        }
        .image{
         display: block;
         justify-content: center;
