@@ -75,8 +75,7 @@ height: calc(100vh - 80px);
   line-height: 22px
 }
 .image{
-  border-radius: 50%;
-  border: 5px solid black;
+
   float: right;
   width: 300px;
   position: static;
