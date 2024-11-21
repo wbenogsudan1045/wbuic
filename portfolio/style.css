@@ -362,6 +362,12 @@ footer a:hover {
       grid-column: 1 / 6;
       grid-row: 7 ;
     }
+    .detl-home, .detl-aboutme, .detl-favorites, .detl-schoolprojects, .detl-talent {
+      padding: 50px 20px; /* Adds space inside each section */
+      margin-bottom: 50px; /* Adds space between sections */
+      box-sizing: border-box; /* Ensures padding doesn’t affect overall size */
+  }
+  
 @media (max-width: 756px) {
        .image{
         display: block;

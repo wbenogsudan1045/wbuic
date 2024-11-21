@@ -81,6 +81,41 @@ height: calc(100vh - 80px);
   width: 300px;
   position: static;
 }
+.extradetl {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+  grid-template-rows: auto; /* Single row */
+  gap: 20px; /* Space between the containers */
+  padding: 20px; /* Add padding for better spacing */
+  background-color: var(--primary-color);
+  color: var(--secondary-color); /* Text color */
+}
+
+/* Styling for individual sections inside .extradetl */
+.extradetl div {
+  background-color: purple;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.image2{
+  border-radius: 50%;
+  border: 5px solid black;
+  width: 200px;
+}
+.image3{
+  border-radius: 50%;
+  border: 5px solid black;
+  width: 230px;
+}
+.image4{
+  border-radius: 50%;
+  border: 5px solid black;
+  width: 200px;
+}
+
 footer {
 background-color: purple;
 display: flex;
@@ -116,98 +151,200 @@ height: 35px;
 @media (max-width: 1050px) {
   .logo {
     padding-left: 30px;
-    
   }
+
   nav ul li a {
     font-size: 16px;
   }
 }
+
 @media (max-width: 843px) {
-.checkbtn {
-  display: block;
-  margin-left: 20px;
+  .checkbtn {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #9c1d9c;
+    top: 80px; /* Pushes the menu below the navbar */
+    left: -100%; /* Initially hides the menu off-screen */
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers menu items vertically */
+    align-items: center; /* Centers menu items horizontally */
+    text-align: center;
+    transition: left 0.5s ease-in-out; /* Smooth transition for showing/hiding */
+    z-index: 999; /* Ensures it overlays other elements */
+  }
+  
+  nav ul li {
+    margin: 20px 0; /* Adjust vertical spacing between items */
+    list-style: none; /* Removes bullets */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-size: 20px; /* Adjusted font size for readability */
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  nav ul li a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* Burger Icon Styling */
+  .checkbtn {
+    margin-left: 45px;
+    font-size: 24px;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: block; /* Visible only in smaller screens */
+    z-index: 1000; /* Places it above the menu */
+  }
+  
+  #check {
+    display: none; /* Hides the actual checkbox */
+  }
+  
+  #check:checked ~ ul {
+    left: 0; /* Shows the menu when checkbox is checked */
+  }
+  
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .image {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+  }
+  .image2{
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 180px;
+  }
+  .image3{
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 200px;
+  }
+  .image4{
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 180px;
+  }
 }
 
-nav ul {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background: #9c1d9c;
-  top: 80px;
-  left: -100%;
-  text-align: center;
-  transition: all .5s;
-}
-nav ul li {
-  display: block;
-  margin: 50px 0;
-  line-height: 30px;
-}
-nav ul li a {
-  font-size: 20px;
-}
-a:hover,
-a.active {
-  background: none;
-  color: #0082e6;
-}
-#check:checked~ul {
-  left: 0;
-}
-a.links{
-  font-size: 90px;
-} 
-.links ul li a{
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-.cpicon{
-  width:30px ;
-}
-.fbicon{
-  height: 30px;
-}
-  .giticon{
-    height: 30px;
-  }
-  footer{
-    margin-top: auto;
-  }
 @media (max-width: 756px) {
-     .image{
-      display: block;
-      justify-content: center;
-      justify-items: center;
-     }
-     h1 {
-     font-size: 45px;
-     }
-     p{
-      font-size: 15px;
-      line-height: 1px;
-     }
-     .links ul li a{
-      font-size: 15px;
-    }
-     .logo{
-      margin-left: 20%;
-    }
-     .cpicon{
-      width:25px ;
-    }
-    .fbicon{
-      height: 25px;
-    }
-    .giticon{
-      height: 25px;
-    }
-    footer{
-      margin-top: auto;
-    }
+  .logo {
+    margin-left: 20%;
+  }
+
+  .cpicon, .fbicon, .giticon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .detl h1 {
+    font-size: 40px;
+  }
+  .extradetl h2{
+    font-size: 20px;
+  }
+
+  .image {
+    width: 200px;
+  }
+  .image2{
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 130px;
+  }
+  .image3{
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 150px;
+  }
+  .image4{
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 130px;
+  }
+
+  p {
+    font-size: 14px;
   }
 }
+
+@media (max-width: 503px) {
+  .detl h1 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  .links ul li a {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .detl h1 {
+    font-size: 30px;
+  }
+  .extradetl h2{
+    font-size: 15px;
+  }
+
+  .image {
+    float: none;
+    width: 150px;
+  }
+  .image2{
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 50px;
+  }
+  .image3{
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 80px;
+  }
+  .image4{
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 50px;
+  }
+
+  .cpicon, .fbicon, .giticon {
+    height: 25px;
+    width: 25px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+}
+
 section {
-background: url("bg.jpg") no-repeat;
-background-size: cover;
-height: calc(100vh - 80px);
+  background: url("bg.jpg") no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
 }  

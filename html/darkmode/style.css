@@ -1,0 +1,28 @@
+:root {
+  --primary-color: white;
+  --secondary-color: black;
+}
+
+body.dark-mode {
+  --primary-color: black;
+  --secondary-color: white;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+p, h1, h2, a {
+  color: var(--secondary-color);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
