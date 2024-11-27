@@ -80,40 +80,6 @@ height: calc(100vh - 80px);
   width: 300px;
   position: static;
 }
-.extradetl {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
-  grid-template-rows: auto; /* Single row */
-  gap: 20px; /* Space between the containers */
-  padding: 20px; /* Add padding for better spacing */
-  background-color: var(--primary-color);
-  color: var(--secondary-color); /* Text color */
-}
-
-/* Styling for individual sections inside .extradetl */
-.extradetl div {
-  background-color: purple;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.image2{
-  border-radius: 50%;
-  border: 5px solid black;
-  width: 200px;
-}
-.image3{
-  border-radius: 50%;
-  border: 5px solid black;
-  width: 230px;
-}
-.image4{
-  border-radius: 50%;
-  border: 5px solid black;
-  width: 200px;
-}
 
 footer {
 background-color: purple;
